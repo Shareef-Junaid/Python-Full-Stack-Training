@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pass By Ref</title>
+    <script src="pass_by_ref.js"></script>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<script>
+    function changeName(per) {
+       // per.firstName = "Alex";
+        per.firstName = null;
+    }
+    //var p1 = new person();
+    document.getElementById("p1").innerHTML = person.firstName;
+
+    changeName(person);
+
+    document.getElementById("p3").innerHTML = person.firstName;
+    //If value is null it gets changed and will not display anything.
+
+</script>
+</body>
+</html>

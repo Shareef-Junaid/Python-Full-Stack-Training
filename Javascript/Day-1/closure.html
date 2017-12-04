@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  /*  function addNumbers(firstNumber,secondNumber)
+    {
+        var returnValue = "Result is : ";
+
+        //This inner function has access to the outer function's variables &
+        //parameters
+        function add()
+        {
+            return returnValue+(firstNumber+secondNumber);
+        }
+        return add;
+    }
+
+    var result = addNumbers(10,20);
+    document.write(result);
+*/
+</script>
+<br>
+<script>
+    function addNumbers(firstNumber,secondNumber)
+    {
+        var returnValue = "Result is : ";
+
+        //This inner function has access to the outer function's variables &
+        //parameters
+        function add()
+        {
+            return returnValue+(firstNumber+secondNumber);
+        }
+        return add();////////// watch this line
+    }
+
+    var result = addNumbers(10,20);
+    document.write(result);
+
+</script>
+
+<br>
+<script>
+    function addNumbers(firstNumber,secondNumber)
+    {
+        var returnValue = "Result is : ";
+
+        //This inner function has access to the outer function's variables &
+        //parameters
+        function add()
+        {
+            return returnValue+(firstNumber+secondNumber);
+        }
+        return add;
+    }
+   //myFunc will contain add() function (inner function) expression
+    var myFunc = addNumbers(10,20);
+    var result=myFunc();
+    document.write(result);
+
+    var result1=addNumbers(30,40)();
+    document.write(result1);
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

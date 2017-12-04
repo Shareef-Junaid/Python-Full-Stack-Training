@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Literal</title>
+    <script src="object_literal.js"></script>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<script>
+    document.getElementById("p1").innerHTML = person.firstName;
+    document.getElementById("p2").innerHTML = person.lastName;
+    document.getElementById("p3").innerHTML = person.age.toString();
+    document.getElementById("p4").innerHTML = person.address.City + " ," + person.address.Country;
+    document.getElementById("p5").innerHTML = person.getFullName();
+
+</script>
+</body>
+</html>

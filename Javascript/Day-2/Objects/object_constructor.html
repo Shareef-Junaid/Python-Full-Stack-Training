@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Constructor</title>
+    <script src="object_consturctor.js"></script>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<script>
+    var p1 = new person();
+    document.getElementById("p1").innerHTML = p1.firstName;
+    document.getElementById("p2").innerHTML = p1.lastName;
+    document.getElementById("p3").innerHTML = p1.age.toString();
+    document.getElementById("p4").innerHTML = p1.address.City + " ," + p1.address.Country;
+    document.getElementById("p5").innerHTML = p1.getFullName();
+
+</script>
+</body>
+</html>

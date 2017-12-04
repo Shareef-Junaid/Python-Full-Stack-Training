@@ -1,0 +1,16 @@
+
+        '''
+        stu_student = student()
+        studentScheduler = student_scheduler()
+        
+        stu_student.rollnumber = input("Enter Student rollnumber ")
+               
+        stu_courses = list()
+        for i in range(2):
+            x = input("Enter Course Name/n")
+            stu_courses.insert(i, x)
+
+        studentScheduler.addStudent(stu_name, stu_rollnum, stu_courses)
+        studentScheduler.showAllStudents()
+        '''
+

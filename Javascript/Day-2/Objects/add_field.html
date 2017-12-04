@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add field</title>
+    <script src="add_field.js"></script>
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+
+<script>
+var stud1 = new student();
+var stud3 = new student();
+
+stud1.lastName = "A"
+
+student.prototype.lastName = "B"
+
+var stud2 = new student();
+//stud2.lastName = "B";
+
+var stud3 = new student();
+//stud3.lastName = "C";
+
+document.getElementById("p1").innerHTML = stud1.firstName +" " + stud1.lastName;
+document.getElementById("p2").innerHTML = stud2.firstName +" " + stud2.lastName;
+document.getElementById("p3").innerHTML = stud3.firstName +" " + stud3.lastName;
+
+</script>
+</body>
+</html>

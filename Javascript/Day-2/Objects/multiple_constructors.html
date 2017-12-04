@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Contructors</title>
+    <script src="multiple_constructors.js"></script>
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+
+<p id="p4"></p>
+
+<script>
+    var p1 = new person();
+    var p2 = new person("A1","A1");
+    var p3 = new person("B1","B1",36);
+    document.getElementById("p1").innerHTML = p1.firstName +" " + p1.lastName +" " + p1.age;
+    document.getElementById("p2").innerHTML = p2.firstName +" " + p2.lastName +" " +  p2.age;
+    document.getElementById("p3").innerHTML = p3.firstName +" " + p3.lastName +" " + p3.age;
+
+    if(p1.hasOwnProperty("address2")){
+        document.getElementById("p4").innerHTML = p1.address2;
+    }
+    else{
+        document.getElementById("p4").innerHTML = "Field does not exits ";
+    }
+</script>
+</body>
+</html>
