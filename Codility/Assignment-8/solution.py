@@ -3,16 +3,17 @@ class Solution:
     count = 0;
 
     def solution(self, a):
-        temp = 0
+        # write your code in Python 2.7
+        i, j, minSum = 0, len(a) - 1, 10 ** 10
+        a.sort()
+        while i <= j:
+            sumS = a[i] + a[j]
+            minSum = min(minSum, abs(sumS))
+            if sumS < 0:
+                i += 1
+            elif sumS > 0:
+                j -= 1
+            else:
+                return 0
+        return minSum
 
-        for p in range(len(a)) :
-            for q in range(len(a)):
-                    temp = temp + a[q]
-                    print(p, q, temp)
-                # temp = temp + a[q];
-
-            # print(p, temp)
-
-        # print(self.c)
-
-        return 0
